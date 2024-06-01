@@ -1,1 +1,2 @@
-
+dataset : training, testing, validation
+https://github.com/niranjanmeegammana/Shallow_Deep_ANN/tree/main/data
