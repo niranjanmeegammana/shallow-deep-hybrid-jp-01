@@ -1,9 +1,3 @@
-activate miniconda environment
-
-pip install pyinstaller
-
-create .spec file 
-
 # -*- mode: python ; coding: utf-8 -*-
 import sys; sys.setrecursionlimit(sys.getrecursionlimit() * 5)
 
@@ -11,7 +5,7 @@ block_cipher = None
 
 
 a = Analysis(
-    ['deep_test20.py'],
+    ['sd_hybrid_wgt_40.py'],
     pathex=[],
     binaries=[],
     datas=[],
@@ -32,7 +26,7 @@ exe = EXE(
     a.scripts,
     [],
     exclude_binaries=True,
-    name='deep_test20',
+    name='sd_hybrid_wgt_40',
     debug=False,
     bootloader_ignore_signals=False,
     strip=False,
@@ -52,10 +46,5 @@ coll = COLLECT(
     strip=False,
     upx=True,
     upx_exclude=[],
-    name='deep_test20',
+    name='sd_hybrid_wgt_40',
 )
-
-run
-pyinstaller shallow_test20.spec
-
-check dist folder

@@ -1,9 +1,3 @@
-activate miniconda environment
-
-pip install pyinstaller
-
-create .spec file 
-
 # -*- mode: python ; coding: utf-8 -*-
 import sys; sys.setrecursionlimit(sys.getrecursionlimit() * 5)
 
@@ -54,8 +48,3 @@ coll = COLLECT(
     upx_exclude=[],
     name='deep_test20',
 )
-
-run
-pyinstaller shallow_test20.spec
-
-check dist folder
